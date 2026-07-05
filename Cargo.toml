@@ -46,10 +46,6 @@ repository = "https://github.com/benjamin-small/scap-vc"
 name = "scap_vc"
 path = "src/lib.rs"
 
-[[bin]]
-name = "scap-vc-demo"
-path = "src/main.rs"
-
 [dependencies.sysinfo]
 version = "0.30.0"
 
