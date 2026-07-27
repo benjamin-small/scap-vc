@@ -45,7 +45,10 @@ fn main() {
     for w in candidates.into_iter().take(15) {
         eprintln!("trying id={} title={:?}", w.id, w.title);
         if let Some((width, height, bytes)) = try_window(Target::Window(w.clone())) {
-            eprintln!("FRAME OK: {}x{} ({} bytes) from {:?}", width, height, bytes, w.title);
+            eprintln!(
+                "FRAME OK: {}x{} ({} bytes) from {:?}",
+                width, height, bytes, w.title
+            );
             return;
         }
         eprintln!("  no frame (likely hidden); next");
