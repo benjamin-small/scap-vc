@@ -10,6 +10,8 @@
 
 A Rust library for high-quality screen capture that leverages native OS APIs for optimal performance!
 
+Development requires Rust 1.71 or newer, matching the crate manifest's minimum supported Rust version.
+
 1. macOS: [ScreenCaptureKit](https://developer.apple.com/documentation/screencapturekit)
 2. Windows: [Windows.Graphics.Capture](https://learn.microsoft.com/en-us/uwp/api/windows.graphics.capture?view=winrt-22621)
 3. Linux: [Pipewire](https://pipewire.org)
@@ -102,6 +104,8 @@ fn main() {
 ## license
 
 The code in this repository is open-sourced under the MIT license, though it may be relying on dependencies that are licensed differently. Please consult their documentation for exact terms.
+
+Configuration and platform prerequisites are documented in [docs/configuration.md](docs/configuration.md). Test scope and current coverage status are documented in [docs/testing.md](docs/testing.md).
 
 ## contributors
 
